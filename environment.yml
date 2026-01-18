@@ -1,0 +1,8 @@
+name: catalyst
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - cudatoolkit
+  - numpy
+  - opencv

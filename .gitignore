@@ -79,3 +79,9 @@ models/*.onnx
 # Logs
 logs/
 *.log
+
+# Generated Artifacts
+expert_review_package/
+reports/
+results/figures/
+results/preprocess_qc/

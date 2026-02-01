@@ -1,7 +1,27 @@
-image_size: [224, 224]
-normalization:
-  mean: [0.485, 0.456, 0.406]
-  std: [0.229, 0.224, 0.225]
+global:
+  image_size: [224, 224]
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+  interpolation: "bilinear"
+
+slit_lamp:
+  resize_mode: "center_crop"
+  clahe_clip_limit: 2.0
+
+mobile:
+  resize_mode: "pad_and_resize"
+
+glare:
+  threshold: 240         # Pixel intensity > 240 considered glare
+  apply_correction: true # Enable CLAHE
+  clahe:
+    clip_limit: 2.0
+    tile_grid_size: [8, 8]
+
 augmentation:
-  horizontal_flip: true
-  rotation_degrees: 15
+  rotation_range: 10      # Degrees (+/-)
+  brightness_limit: 0.15  # +/- 15%
+  contrast_limit: 0.15    # +/- 15%
+  blur_kernel: 3          # Kernel size for Gaussian Blur (mild)
+  blur_prob: 0.3          # Probability of applying blur

@@ -1,0 +1,74 @@
+pseudo_labels:
+  'NO':
+    description: Nuclear Opalescence - correlated with blur
+    metrics:
+    - name: laplacian_var
+      relation: inverse
+      weight: 1.0
+    clamp_range:
+    - 0
+    - 5
+  NC:
+    description: Nuclear Color - correlated with yellowing
+    metrics:
+    - name: red_blue_ratio
+      relation: direct
+      weight: 0.7
+    - name: mean_luminance
+      relation: inverse
+      weight: 0.3
+    clamp_range:
+    - 0
+    - 5
+  CO:
+    description: Cortical - correlated with edge features
+    metrics:
+    - name: edge_density
+      relation: direct
+      weight: 1.0
+    clamp_range:
+    - 0
+    - 5
+  PSC:
+    description: Posterior Subcapsular - correlated with contrast loss/glare
+    metrics:
+    - name: contrast
+      relation: inverse
+      weight: 0.6
+    - name: mean_luminance
+      relation: direct
+      weight: 0.4
+    clamp_range:
+    - 0
+    - 5
+bin_thresholds:
+  0: 1.0555555555555558
+  1: 2.055555555555556
+  2: 3.055555555555556
+  3: 4.055555555555555
+  4: 5.055555555555555
+calibrated_thresholds:
+  'NO':
+    0: 0.9242424242424243
+    1: 1.9242424242424243
+    2: 2.9242424242424243
+    3: 3.9242424242424243
+    4: 4.924242424242424
+  NC:
+    0: 1.085858585858586
+    1: 2.085858585858586
+    2: 3.085858585858586
+    3: 4.0858585858585865
+    4: 5.0858585858585865
+  CO:
+    0: 1.287878787878788
+    1: 2.287878787878788
+    2: 3.287878787878788
+    3: 4.287878787878788
+    4: 5.287878787878788
+  PSC:
+    0: 0.9242424242424243
+    1: 1.9242424242424243
+    2: 2.9242424242424243
+    3: 3.9242424242424243
+    4: 4.924242424242424

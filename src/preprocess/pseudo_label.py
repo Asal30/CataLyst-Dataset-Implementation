@@ -165,6 +165,7 @@ def main(metrics_csv, config_yaml, output_dir, version):
     clean_cols_map = {
         'filename': 'image_id',
         'image_source': 'source',
+        'rel_path': 'relative_path',
         'NO_pseudo': 'NO_pseudo',
         'NC_pseudo': 'NC_pseudo',
         'CO_pseudo': 'CO_pseudo',

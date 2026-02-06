@@ -1,0 +1,13 @@
+severity_bins:
+  0: [0.0, 0.2]
+  1: [0.2, 0.4]
+  2: [0.4, 0.6]
+  3: [0.6, 0.8]
+  4: [0.8, 1.0]
+
+class_names:
+  0: "Normal"
+  1: "Mild"
+  2: "Moderate"
+  3: "Severe"
+  4: "Very Severe"

@@ -1,0 +1,24 @@
+=== Dataset Split Leakage Check ===
+
+[PASS] Loaded mobile_train.csv: 9332 rows
+[PASS] Loaded mobile_val.csv: 2000 rows
+[PASS] Loaded mobile_test.csv: 2006 rows
+[PASS] Loaded slit_lamp_train.csv: 4917 rows
+[PASS] Loaded slit_lamp_val.csv: 1052 rows
+[PASS] Loaded slit_lamp_test.csv: 1057 rows
+[PASS] MOBILE Hash Integrity (train vs val): No overlap.
+[PASS] MOBILE ImageID Integrity (train vs val): No overlap.
+[PASS] MOBILE Hash Integrity (train vs test): No overlap.
+[PASS] MOBILE ImageID Integrity (train vs test): No overlap.
+[PASS] MOBILE Hash Integrity (val vs test): No overlap.
+[PASS] MOBILE ImageID Integrity (val vs test): No overlap.
+[PASS] SLIT_LAMP Hash Integrity (train vs val): No overlap.
+[PASS] SLIT_LAMP ImageID Integrity (train vs val): No overlap.
+[PASS] SLIT_LAMP Hash Integrity (train vs test): No overlap.
+[PASS] SLIT_LAMP ImageID Integrity (train vs test): No overlap.
+[PASS] SLIT_LAMP Hash Integrity (val vs test): No overlap.
+[PASS] SLIT_LAMP ImageID Integrity (val vs test): No overlap.
+[PASS] CROSS-DATASET Integrity: No overlap between Mobile and Slit Lamp.
+
+=== Summary ===
+SUCCESS: All leakage checks passed.

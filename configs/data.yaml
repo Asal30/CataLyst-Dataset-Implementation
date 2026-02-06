@@ -1,0 +1,5 @@
+raw_data_dir: "data/raw"
+processed_data_dir: "data/processed"
+splits_dir: "data/splits"
+dataset_name: "catalyst"
+version: "1.0"

@@ -63,25 +63,34 @@ coverage.xml
 .idea/
 
 # Project Data
-data/raw/
+data/**/*.csv
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.json
 data/processed/
-data/labels/
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!data/labels/.gitkeep
+data/datasets/
 
-# Models (ignore large checkpoints)
-models/*.pth
-models/*.pt
-models/*.onnx
-!models/.gitkeep
+# Saved Models & Checkpoints
+data/saved_models/
 
-# Logs
-logs/
-*.log
-
-# Generated Artifacts
-expert_review_package/
+# Results & Reports
 reports/
 results/figures/
 results/preprocess_qc/
+
+# Expert Review Package
+expert_review_package/expert_review/
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

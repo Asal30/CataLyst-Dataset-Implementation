@@ -1,8 +1,0 @@
-checkpoint_path: "results/checkpoints/best_model.pth"
-batch_size: 64
-metrics:
-  - "accuracy"
-  - "precision"
-  - "recall"
-  - "f1_score"
-output_dir: "results/evaluation"
